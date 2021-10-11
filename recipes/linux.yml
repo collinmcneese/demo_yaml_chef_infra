@@ -1,0 +1,18 @@
+#
+# Cookbook:: demo_yaml_chef_infra
+# Recipe:: linux
+#
+
+---
+resources:
+- type: directory
+  name: '/var/chef/demo_yaml_chef_infra'
+  owner: 'root'
+  group: 'root'
+  mode: '0755'
+  recursive: true
+  action:
+    - create
+# custom resource is called which is defined in the cookbook and uses dynamic attributes for population
+- type: demo_yaml_file_gen
+  name: '/var/chef/demo_yaml_chef_infra/demo_yaml_file.txt'
