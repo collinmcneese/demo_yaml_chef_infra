@@ -7,8 +7,8 @@ on:
       - main
 
 jobs:
-  env:
-    CHEF_LICENSE: accept-no-persist
-  call-workflow-1:
+  verify_cookbook:
     uses: collinmcneese/gh_workflows/.github/workflows/verify_cookbook.yml@main
+    env:
+      CHEF_LICENSE: accept
 
