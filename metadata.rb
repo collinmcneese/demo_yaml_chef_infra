@@ -1,6 +1,6 @@
 name 'demo_yaml_chef_infra'
 maintainer 'Collin McNeese'
-maintainer_email 'cmcneese@chef.io'
+maintainer_email 'collin@mydevsandbox.com'
 license 'Apache-2.0'
 description 'Installs/Configures demo_yaml_chef_infra'
 version '0.1.0'
